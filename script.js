@@ -1,9 +1,9 @@
+const numCompleted = document.getElementById("num-completed");
 const shoppingList = Array.from(
   document.getElementById("shopping-list").children
 );
 
 function incrementCompleted() {
-  const numCompleted = document.getElementById("num-completed");
   const current = +numCompleted.innerText;
   numCompleted.innerText = current + 1;
 }
